@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sophia</title>
+</head>
+<body>
+    <h1>Calculando la bodega </h1>
+
+    <form id="formulario">
+        <div>
+            <label for="nombre_producto">nombre del producto</label>
+            <input type="text" id="nombre_producto">
+        </div>
+        <div>
+            <label for="costo_producto">costo del producto</label>
+            <input type="text" id="costo_producto">
+        </div>
+        <div>
+            <label for="porcentaje_ganancia">porcentaje de ganancia</label>
+            <input type="text" id="porcentaje_ganancia">
+        </div>
+        <button id="crear_producto">agregar producto</button>
+    </form> 
+
+    <table>
+        <thead>
+            <th>nombre</th>
+            <th>costo</th>
+            <th>porcentaje de ganancia</th>
+            <th>ganacia</th>
+        </thead>
+        <tbody id="tabla_productos">
+        </tbody>
+    </table>
+
+    <h2>TOTAL: </h2><h2 id="total_ganancia"></h2>
+    <script src="./mean.js"></script>
+</body>
+</html>
